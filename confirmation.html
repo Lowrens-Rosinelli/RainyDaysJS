@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Confirmation - Rainy Days</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    main {
+      max-width: 600px;
+      margin: 3rem auto;
+      text-align: center;
+    }
+
+    .confirmation-logo {
+      display: block;
+      margin: 0 auto 2rem;
+      max-width: 180px;
+    }
+
+    .confirmation-heading {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .confirmation-subtext {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .return-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #0b5e65;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .return-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop-all.html">Shop All</a></li>
+        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <img src="/logo/RainyDays_Logo.png" alt="Rainy Days Logo" class="confirmation-logo" />
+    <h1 class="confirmation-heading">Congratulations with you first order!  </h1>
+    <p class="confirmation-subtext">Your adventure is about to begin. 🏔️</p>
+    <a href="index.html" class="return-link">← Return to Home</a>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Socials</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Get New and Offers First</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email">
+          <input type="text" placeholder="Your Country">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/confirmation.js"></script>
+</body>
+</html>

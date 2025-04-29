@@ -1,0 +1,191 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+  }
+  
+  header nav {
+    background-color: #0A3641;
+    padding: 10px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+  }
+  
+  header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('images/Contact.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  
+  .contact-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .contact-info h1 {
+    font-size: 24px;
+    color: #0A3641;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #0A3641;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #0A3641;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #B5C3C6;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .footer-column h3 {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .newsletter-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .newsletter-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a8c98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #0A3641;
+  }
+  
+  @media (max-width: 600px) {
+    header nav ul {
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .hero-logo {
+      max-width: 150px;
+    }
+  
+    .contact-info {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .contact-info h1 {
+      font-size: 20px;
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+    }
+  
+    footer .footer-container {
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  
+    .footer-column {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

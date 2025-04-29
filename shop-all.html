@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Shop All - Rainy Days</title>
+  <link rel="stylesheet" href="css/shop-all.css" />
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop-all.html">Shop All</a></li>
+      <li><a href="shopping-cart.html">Shopping Cart</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero-container">
+    <img src="logo/RainyDays_Logo.png" alt="Rainy Days company logo" class="hero-logo">
+  </section>
+  <section class="filter-controls">
+    <label for="genderFilter">Filter by:</label>
+    <select id="genderFilter">
+      <option value="all">All</option>
+      <option value="Male">Men</option>
+      <option value="Female">Women</option>
+    </select>
+  </section>
+  <section class="products-section">
+    <h2>Shop All Products</h2>
+    <div class="products"></div> <!-- 🛒 JS will load products dynamically here -->
+  </section>
+</main>
+<footer>
+  <div class="footer-container">
+  </div>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
